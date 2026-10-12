@@ -65,6 +65,20 @@ class LinkedList:
         while (temp):
             print(temp.data)
             temp = temp.next
+    def reverse(self):
+        self.head = prev
+    def findmid_del(self):
+        temp = temp1=self.head
+        prev = None
+        while temp1 and temp1.next:
+            prev = temp
+            temp = temp.next
+            temp1=temp1.next.next
+        print("middle node: ",temp.data)
+        prev.next = temp.next
+        temp = None
+    def delfirst_last(self):
+        temp1 = self.head
 list = LinkedList()
 n1 = Node(10)
 n2 = Node(20)
