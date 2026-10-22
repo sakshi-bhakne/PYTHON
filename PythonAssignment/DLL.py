@@ -41,16 +41,27 @@ class DoublyLinkedList:
         if temp.next:
             temp.next.prev = temp.prev
 
-    def display(self):
-        temp = self.head
-        while temp:
-            print(temp.data, end=" <-> ")
-            temp = temp.next
-        print("None")
+    # def display(self):
+    #     temp = self.head
+    #     while temp:
+    #         print(temp.data, end=" <-> ")
+    #         temp = temp.next
+    #     print("None")
+    # def count_occurrence(self):
+    #     count = 0
+    #     temp = self.head
 
+    # while temp:
+    #     if temp.data == 10:
+    #         count += 1
+    #     temp = temp.next
+    
+    def swap_first_last(self):
+       temp = node1 = self.head
+       while(temp.next):
+           temp = temp.next 
 
 dll = DoublyLinkedList()
-
 dll.insert_end(10)
 dll.insert_end(20)
 dll.insert_end(30)
